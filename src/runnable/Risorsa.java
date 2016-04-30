@@ -1,4 +1,4 @@
-package esethread.runnable;
+package runnable;
 
 public class Risorsa {
     char[][] matrice;
