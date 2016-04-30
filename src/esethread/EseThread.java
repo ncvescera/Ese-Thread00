@@ -2,7 +2,7 @@ package esethread;
 
 public class EseThread {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         Risorsa risorsa = new Risorsa();
         
         Thread uno = new Vigenere(0,13,0,13,"1",risorsa);
@@ -20,6 +20,11 @@ public class EseThread {
         System.out.println(quattro.getName());
         
         System.out.print("\nMatrice:\n");
+        
+        uno.join();
+        due.join();
+        tre.join();
+        quattro.join();
         
         risorsa.print();
     }
