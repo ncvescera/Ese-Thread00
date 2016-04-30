@@ -23,12 +23,27 @@ public class EseThread {
         
         try{
             uno.join();
+        }
+        catch(Exception e){
+            System.err.println(uno.getName()+"Do the following exception:\n"+e);
+        }
+        try{
             due.join();
+        }
+        catch(Exception e){
+            System.err.println(due.getName()+"Do the following exception:\n"+e);
+        }
+        try{
             tre.join();
+        }
+        catch(Exception e){
+            System.err.println(tre.getName()+"Do the following exception:\n"+e);
+        }
+        try{
             quattro.join();
         }
         catch(Exception e){
-            System.err.println(e);
+            System.err.println(quattro.getName()+"Do the following exception:\n"+e);
         }
         risorsa.print();
     }

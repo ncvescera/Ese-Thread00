@@ -15,7 +15,7 @@ public class Vigenere extends Thread{
         this.fine_colonna = fine_colonna;
         
         this.nome = nome;
-        this.matrix = matrix;
+        this.matrix = matrix; 
     }
     
     @Override
