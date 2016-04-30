@@ -7,6 +7,8 @@ public class Vigenere extends Thread{
     Risorsa matrix;
     
     public Vigenere(int inizio_riga, int fine_riga, int inizio_colonna, int fine_colonna, String nome, Risorsa matrix){
+        super(nome);
+        
         this.inizio_riga = inizio_riga;
         this.fine_riga = fine_riga;
         this.inizio_colonna = inizio_colonna;
@@ -28,4 +30,5 @@ public class Vigenere extends Thread{
             }
         }
     }
+    
 }
